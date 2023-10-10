@@ -78,8 +78,11 @@ body {
   display: grid;
   place-items: center;
   min-height: 100vh;
-  background-color: hsl(225, 100%, 94%);
   font-family: "Red Hat Display", sans-serif;
+  background: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: hsl(225, 100%, 94%);
 }
 main {
   max-width: 375px;
