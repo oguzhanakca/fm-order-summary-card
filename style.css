@@ -1,0 +1,172 @@
+/*
+            1. Use a more-intuitive box-sizing model.
+          */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+            2. Remove default margin
+          */
+* {
+  margin: 0;
+}
+/*
+            Typographic tweaks!
+            3. Add accessible line-height
+            4. Improve text rendering
+          */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+            5. Improve media defaults
+          */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+            6. Remove built-in form typography styles
+          */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+            7. Avoid text overflows
+          */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+            8. Create a root stacking context
+          */
+#root,
+#__next {
+  isolation: isolate;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+}
+main {
+  max-width: 375px;
+}
+button {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0px;
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+}
+h1 {
+  color: hsl(223, 47%, 23%);
+  font-size: 22px;
+  font-weight: 900;
+}
+p {
+  font-size: 16px;
+  padding: 10px 20px;
+  color: hsl(224, 23%, 55%);
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  margin: 25px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+.plan {
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  margin: 10px 0px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+.plan-description {
+  margin-right: 20px;
+}
+
+.plan-name {
+  color: hsl(223, 47%, 23%);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.plan-price {
+  color: hsl(224, 23%, 55%);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.change {
+  font-weight: 900;
+  font-size: 12px;
+  color: hsl(245, 75%, 52%);
+  cursor: pointer;
+  text-decoration: underline;
+}
+.change:hover {
+  color: #766cf1;
+  text-decoration: none;
+}
+
+.proceed {
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+}
+.proceed:hover {
+  background-color: #766cf1;
+}
+.cancel {
+  color: hsl(224, 23%, 55%);
+  background-color: white;
+  font-weight: 900;
+  font-size: 15px;
+}
+.cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
